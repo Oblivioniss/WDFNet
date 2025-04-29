@@ -1,0 +1,32 @@
+{
+    "csv_path": "../data/multi_dataset.csv",
+    "model_path": "../results_roberta_text/final_model",
+    "output_vec_path": "../data/roberta_text_embeddings.json",
+    "data_dir": "../data/OFM",
+    "augmented_dir": "../data/OFM_augmented",
+    "embedding_json": "../data/roberta_text_embeddings.json",
+    "split_save_dir": "../data/dataset_splits",
+    "influence_path": "../influence_results/fossil_resnet50/scores_resnet50_scores/pairwise_scores.safetensors",
+
+    "num_epochs": 100,
+    "batch_size": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "step_size": 15,
+    "gamma": 0.5,
+    "aux_weight": 1,
+    "cos_weight": 1,
+    "device": "cuda",
+    "cuda_visible_devices": "0",
+    "patch_size": 128,
+    "num_patches": 8,
+    "resize_size": 512,
+    "save_checkpoint_every": 10,
+
+    "resnet_num_epochs": 50,
+    "resnet_batch_size": 8,
+    "resnet_lr": 0.001,
+    "resnet_weight_decay": 0.0001,
+    "resnet_step_size": 15,
+    "resnet_gamma": 0.1
+}
